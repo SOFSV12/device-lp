@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;1,400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+  background-color: white;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.first {
+  width: 100%;
+  /* height: 100vh; */
+  background: url(images/bg-header-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.c {
+  margin-bottom: 35px;
+}
+
+/* first section  */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.txt {
+  color: var(--grayish-blue);
+  line-height: 35px;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1,
+h3 {
+  margin-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  margin: 30px 0 120px 0;
+}
+
+.bg1 {
+  padding: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 25px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  border: 0px;
+  color: white;
+}
+
+.btn1 {
+  margin-right: 8px;
+  background-color: var(--strong-cyan);
+}
+
+.btn2 {
+  margin-left: 8px;
+  background-color: var(--light-blue);
+}
+
+/* second section */
+
+.second {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+}
+
+.txt1 {
+  color: var(--grayish-blue);
+  line-height: 35px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.img {
+  width: 100%;
+}
+
+.clip {
+  margin-bottom: 20px;
+}
+
+.firstchild {
+  margin-right: 150px;
+}
+
+/* third section */
+.three {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.child {
+  margin-top: 80px;
+}
+
+/* fourth  section*/
+.four {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  /* background-color: blue; */
+}
+.subservices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sub {
+  margin-bottom: 25px;
+}
+
+/* fifth section */
+.five {
+  display: flex;
+  flex-direction: column;
+  /* height: 50vh; */
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* footer */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgba(213, 210, 210, 0.7);
+  padding: 25px 0 25px 0;
+  width: 100%;
+  /* height: 30vh; */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+  /* section 1*/
+  .btn {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 20px 0;
+  }
+  .btn1 {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .btn2 {
+    margin-left: 0;
+  }
+
+  /*  section 2*/
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+  .firstchild {
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  h1,
+  h3 {
+    text-align: center;
+  }
+  .txt1 {
+    text-align: center;
+  }
+
+  /* section 4 */
+  .company {
+    display: flex;
+    flex-direction: column;
+  }
+  .subservices {
+    margin-bottom: 25px;
+  }
+  .c1 {
+    margin-bottom: 100px;
+  }
+  /* footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul li {
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    margin-right: 30px;
+  }
+}
